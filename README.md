@@ -219,3 +219,17 @@ return (
 
 This explanation covers the code in the `CardListing.js` file 
   
+### For Styling 
+The project includes a CardListing.css file, which contains custom styles specific to the CardListing component. These styles are imported and applied to the corresponding JSX elements.
+
+The project includes a cards.json file, which contains mocked card data used for testing and demonstration purposes.
+
+## Conclusion:
+
+The Card Listing project is a React application that showcases a dynamic card listing component. It allows users to view and filter a list of cards based on various criteria such as card type, search term, and card status.
+
+The project demonstrates the use of React hooks like useEffect, useReducer, useCallback, and useMemo for managing state and handling user interactions. It also incorporates a mocked API function to simulate fetching card data asynchronously.
+
+The Card Listing component leverages Tailwind CSS, a utility-first CSS framework, for styling and layout. Tailwind CSS classes and utility styles are applied to the JSX elements to achieve a clean and responsive design.
+
+The project's modular structure and adherence to coding standards make it easy to understand, maintain, and extend. It showcases the power of React in creating reusable and interactive components that enhance user experience.
