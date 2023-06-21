@@ -155,7 +155,7 @@ const handleScroll = useCallback(() => {
 - It checks if the user has scrolled to the bottom of the page by comparing the window height, current scroll position, and the document's total height.
 - If the user has reached the bottom, it dispatches the `'SET_PAGE'` action to increment the `page` property in the state.
 
-```jsx
+code
 useEffect(() => {
   window.addEventListener('scroll', handleScroll);
   return () => {
@@ -166,21 +166,21 @@ useEffect(() => {
 - This `useEffect` hook adds and removes the scroll event listener when the component is mounted and unmounted, respectively.
 - It depends on the `handleScroll` variable, so it will be called whenever `handleScroll` changes.
 
-```jsx
+code
 const handleSearch = (event) => {
   dispatch({ type: 'SET_SEARCH_TERM', payload: event.target.value });
 };
 ```
 - `handleSearch` is a function that takes an event object as an argument, extracts the search term value from the event target (input field), and dispatches the `'SET_SEARCH_TERM'` action to update the `searchTerm` property in the state.
 
-```jsx
+code
 const handleFilter = (event) => {
   dispatch({ type: 'SET_SELECTED_TYPE', payload: event.target.value });
 };
 ```
 - `handleFilter` is a function that takes an event object as an argument, extracts the selected filter value from the event target (select field), and dispatches the `'SET_SELECTED_TYPE'` action to update the `selectedType` property in the state.
 
-```jsx
+code
 const filteredCards = useMemo(() => {
   return cards.filter((card) => {
     // ...
@@ -191,7 +191,7 @@ const filteredCards = useMemo(() => {
 - It filters the `cards` array based on the current `activeTab`, `searchTerm`, and `selectedType` values.
 - This memoized value will only be recalculated if any of the dependent variables (`cards`, `activeTab`, `searchTerm`, `selectedType`) change.
 
-```jsx
+code
 return (
   <div className="card-listing">
     {/* Tab navigation */}
@@ -217,5 +217,5 @@ return (
 - It renders the main container with the class `card-listing` and contains three sections: tab navigation, search and filter, and the card list.
 - The actual content of these sections is not shown in the provided code snippet.
 
-This explanation covers the code in the `CardListing.js` file and describes the purpose and functionality of each line. Keep in mind that this is just a partial explanation, and the omitted parts may contain additional functionality for the component.
+This explanation covers the code in the `CardListing.js` file 
   
